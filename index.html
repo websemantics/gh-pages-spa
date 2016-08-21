@@ -17,9 +17,9 @@
           delete sessionStorage.redirect;
           if (redirect && redirect != location.href) {
               history.replaceState(null, null, redirect);
-              $('#message').html('Route: ' + redirect)
+              $('#message').html('Coming at you from, ' + redirect)
           } else {
-              $('#message').html('This page was loaded directly from the index.html file')
+              $('#message').html('Still here at the index.html file')
           }
       })
     </script>
