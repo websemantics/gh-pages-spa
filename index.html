@@ -18,6 +18,7 @@
             console.log('Got it');
             console.log(redirect);
             console.log(location.href);
+            $('#message').html(redirect)
             if (redirect && redirect != location.href) {
                 history.replaceState(null, null, redirect);
                 // REMOVE THIS - just showing the redirect route in the UI
