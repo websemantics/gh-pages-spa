@@ -17,9 +17,11 @@
           delete sessionStorage.redirect;
           if (redirect && redirect != location.href) {
               history.replaceState(null, null, redirect);
-              $('#message').html('Coming at you from, ' + redirect)
+              $('#message').html('Coming at you from')
+              $('#message-detail').html(redirect)
           } else {
-              $('#message').html('Still here at the index.html file')
+            $('#message').html('')
+            $('#message-detail').html('Still here at the index.html file')
           }
       })
     </script>
@@ -41,8 +43,8 @@
                 <img src="img/pikachu.svg">
                 <h1 class="ui header">Hi. I'm Pikachu.</h1>
                 <div class="ui right big yellow image label">
-                    <i class="info icon"></i>
-                    <div class="detail" id="message">Let me tell you something!</div>
+                    <i class="info icon" id="message"></i>
+                    <div class="detail" id="message-detail">Let me tell you something!</div>
                 </div>
 
                 <p>I'll help you build Single Page Applications with Github Pages.</p>
