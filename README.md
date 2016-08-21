@@ -1,4 +1,4 @@
-![SPA](img/screenshot.pg)
+![SPA](https://websemantics.github.io/gh-pages-spa/img/screenshot.png)
 > The Single-Page App Hack For GitHub Pages
 
 ### [Live demo](http://websemantics.github.io/gh-pages-spa/)
