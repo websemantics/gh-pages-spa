@@ -14,6 +14,7 @@ This project was built following this article,
 
 [Pokemon Go](http://www.flaticon.com/packs/pokemon-go), a free SVG icon set.
 
+[SPA Template](https://github.com/csuwildcat/sghpa), Template for single page apps on Github Pages, via 404 meta redirect.
 
 ## License
 
