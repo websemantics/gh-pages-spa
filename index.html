@@ -18,10 +18,10 @@
             if (redirect && redirect != location.href) {
                 history.replaceState(null, null, redirect);
                 // REMOVE THIS - just showing the redirect route in the UI
-                $('#message').text('This page was redirected by 404.html, from the route: ' + redirect)
+                $('#message').html('This page was redirected by 404.html, from the route: ' + redirect)
             } else {
                 // REMOVE THIS - just showing the redirect route in the UI
-                $('#message').text('This page was loaded directly from the index.html file')
+                $('#message').html('This page was loaded directly from the index.html file')
             }
         })();
     </script>
@@ -34,8 +34,8 @@
             <div class="ui container">
                 <div class="ui large secondary menu">
                     <div class="right item">
-                        <a class="item" href="#about">About</a>
-                        <a class="item" href="#contact">Contact</a>
+                        <a class="item" href="/about">About</a>
+                        <a class="item" href="/contact">Contact</a>
                     </div>
                 </div>
             </div>
