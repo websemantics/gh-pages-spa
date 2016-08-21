@@ -1,0 +1,77 @@
+body,
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: #4C4845!important;
+}
+
+.ui.button {
+    border-radius: 2em;
+}
+
+.masthead.segment {
+    min-height: 700px;
+    padding: 1em 0em;
+    border-bottom:none!important;
+}
+
+.masthead .hero {
+    margin-top: 5em;
+}
+
+.masthead .hero img {
+    width: 200px;
+}
+
+.masthead .hero h1.ui.header {
+    margin-top: 0.7em;
+    margin-bottom: 0em;
+    font-size: 4em;
+    font-weight: normal;
+}
+
+.masthead .hero p {
+    color: #4e4b48;
+    margin-top: 1em;
+    margin-bottom: 2em;
+    font-size: 1.5em;
+}
+
+.ui.footer img {
+    width: 24px;
+    vertical-align: middle;
+    margin: 0px 4px 0px 2px;
+}
+
+.ui.secondary.menu a.item:hover {
+    background: rgba(76, 72, 69, 1);
+    color: #fff;
+}
+
+.masthead h2 {
+    font-size: 1.7em;
+    font-weight: normal;
+}
+
+.ui.vertical.stripe {
+    padding: 10em 0em;
+}
+
+.ui.vertical.stripe h3 {
+    font-size: 2em;
+}
+
+.ui.vertical.stripe p {
+    padding: 1em 0em;
+    font-size: 1.33em;
+}
+
+.footer.segment {
+    padding: 5em 0em;
+}
+
+.ui.vertical.segment {
+  border-bottom: none!important;
+}
