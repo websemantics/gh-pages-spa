@@ -5,24 +5,29 @@
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
-    <title>Github Pages SPA - Web Semantics, Inc.</title>
+    <title>SPA for Github Pages - Web Semantics, Inc.</title>
     <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.min.css">
     <link rel="stylesheet" type="text/css" href="css/index.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.2/semantic.js"></script>
     <script type="text/javascript" src="https://cdn.rawgit.com/websemantics/bragit/0.1.2/bragit.js"></script>
 
     <script>
-        $(document)
-            .ready(function() {
-
-
-            });
+        (function() {
+            var redirect = sessionStorage.redirect;
+            delete sessionStorage.redirect;
+            if (redirect && redirect != location.href) {
+                history.replaceState(null, null, redirect);
+                // REMOVE THIS - just showing the redirect route in the UI
+                $('#message').text('This page was redirected by 404.html, from the route: ' + redirect)
+            } else {
+                // REMOVE THIS - just showing the redirect route in the UI
+                $('#message').text('This page was loaded directly from the index.html file')
+            }
+        })();
     </script>
 </head>
 
 <body>
-
     <div class="pusher">
         <div class="ui vertical masthead center aligned segment">
 
@@ -34,20 +39,24 @@
                     </div>
                 </div>
             </div>
-
             <div class="ui text hero container">
                 <img src="img/pikachu.svg">
                 <h1 class="ui header">Hi. I'm Pikachu.</h1>
+                <div class="ui right huge yellow image label">
+                    <i class="info icon"></i>
+                    <div class="detail" id="message">Let me tell you something!</div>
+                </div>
+
                 <p>I'll help you build Single Page Applications with Github Pages.</p>
                 <a class="ui labeled huge button github-websemantics-gh-pages-spa-stars">
-                    <div class="ui blue huge button"> <i class="star icon"></i> Stars </div>
-                    <div class="ui basic blue left pointing label"> <i class="spinner loading icon"></i> </div>
+                    <div class="ui grey huge button"> <i class="star icon"></i> Stars </div>
+                    <div class="ui basic grey left pointing label"> <i class="spinner loading icon"></i> </div>
                 </a>
                 <a class="ui labeled huge button github-websemantics-gh-pages-spa-forks">
-                    <div class="ui blue huge button"> <i class="fork icon"></i> Forks </div>
-                    <div class="ui basic blue left pointing label"> <i class="spinner loading icon"></i> </div>
+                    <div class="ui grey huge button"> <i class="fork icon"></i> Forks </div>
+                    <div class="ui basic grey left pointing label"> <i class="spinner loading icon"></i> </div>
                 </a>
-                <a class="ui blue huge button github-websemantics-gh-pages-spa-github"> <i class="github icon"></i> Github </a>
+                <a class="ui grey huge button github-websemantics-gh-pages-spa-github"> <i class="github icon"></i> Github </a>
             </div>
 
         </div>
@@ -55,7 +64,8 @@
         <div class="ui vertical stripe segment">
             <div class="ui text container">
                 <h3 class="ui header">Single Page Application</h3>
-                <p> SPA is a web application or web site that fits on a single web page with the goal of providing a more fluid user experience similar to a desktop application.  In a SPA, either all necessary code, HTML, JavaScript and CSS is retrieved with a single page load or the appropriate resources are dynamically loaded and added to the page as necessary, usually in response to user actions.</p>
+                <p> SPA is a web application or web site that fits on a single web page with the goal of providing a more fluid user experience similar to a desktop application. In a SPA, either all necessary code, HTML, JavaScript and CSS is retrieved with
+                    a single page load or the appropriate resources are dynamically loaded and added to the page as necessary, usually in response to user actions.</p>
                 <a class="ui huge yellow button" href="https://en.wikipedia.org/wiki/Single-page_application">Read More</a>
             </div>
         </div>
@@ -66,15 +76,15 @@
                     <div class="three wide column">
                         <h4 class="ui header">Github</h4>
                         <div class="ui link list">
-                          <a href="https://github.com/websemantics/gh-pages-spa" class="item">Fork Me</a>
-                          <a href="https://github.com/csuwildcat/sghpa" class="item">SPA Template</a>
+                            <a href="https://github.com/websemantics/gh-pages-spa" class="item">Fork Me</a>
+                            <a href="https://github.com/csuwildcat/sghpa" class="item">SPA Template</a>
                         </div>
                     </div>
                     <div class="three wide column">
                         <h4 class="ui header">Links</h4>
                         <div class="ui link list">
-                          <a href="https://www.smashingmagazine.com/2016/08/sghpa-single-page-app-hack-github-pages/" class="item">Single Page App Hack</a>
-                          <a href="http://www.flaticon.com/packs/pokemon-go" class="item">Pokemon Go Icons</a>
+                            <a href="https://www.smashingmagazine.com/2016/08/sghpa-single-page-app-hack-github-pages/" class="item">Single Page App Hack</a>
+                            <a href="http://www.flaticon.com/packs/pokemon-go" class="item">Pokemon Go Icons</a>
                         </div>
                     </div>
                     <div class="seven wide column">
