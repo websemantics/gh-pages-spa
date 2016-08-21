@@ -19,7 +19,7 @@
 
 ## Credits
 
-This project was build following this article,
+This project was built following this article,
 
 [S(GH)PA](https://www.smashingmagazine.com/2016/08/sghpa-single-page-app-hack-github-pages/), tutorial to build the ability to route paths for a GitHub Pages website to its index.html for handling as a single-page app (SPA).
 
