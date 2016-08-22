@@ -1,0 +1,7 @@
+1.0.0
+    date: 2016-08-22
+    changes:
+    - Easy way to enable Single Page Applications for GitHub Pages
+    - Install from NPM or Bower
+    - No Dependencies
+    - Self-contained SPA demo app
