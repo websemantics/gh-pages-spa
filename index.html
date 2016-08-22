@@ -17,10 +17,9 @@
     <script type="text/javascript" src="ghspa.js"></script>
     <script>
       $(function() {
-          if (redirect != location.href) {
-              history.replaceState(null, null, redirect)
+          if (location.href != redirect) {
               $('#message').html('Coming at you from')
-              $('#message-detail').html(redirect)
+              $('#message-detail').html(location.href)
           } else {
             $('#message').html('')
             $('#message-detail').html('Still here at the index.html file')
