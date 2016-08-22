@@ -36,6 +36,20 @@
    /* redirect all trafic to index.html if 404 page */
    if(document.title === '404'){
      redirect()
+   } else {
+     if (l.search) {
+       var q = {}
+       l.search.slice(1).split('&').forEach(function(v) {
+         var a = v.split('=')
+         q[a[0]] = a.slice(1).join('=').replace(/~and~/g, '&')
+       })
+       if (q.p !== undefined) {
+         window.history.replaceState(null, null,
+           repo + (q.p || '') +
+           (q.q ? ('?' + q.q) : '') +
+           l.hash
+         )
+       }
+     }
    }
-
  }(window.location))
