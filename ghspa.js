@@ -4,22 +4,22 @@
  *  | __ |  |  |__| |  | |__]    |__] |__| | __ |___ [__     [__  |__] |__|
  *  |__] |  |  |  | |__| |__]    |    |  | |__] |___ ___]    ___] |    |  |
  *
- *  Enables SPA for Github Pages
+ *  Easy way to enable Single Page Applications for GitHub Pages
  *
- * This project was released under MIT license.
+ *  This project was released under MIT license.
  *
- * @link      http://websemantics.ca
- * @author    Web Semantics, Inc. Dev Team <team@websemantics.ca>
- * @author    Adnan M.Sagar, PhD. <adnan@websemantics.ca>
+ *  @link      http://websemantics.ca
+ *  @author    Web Semantics, Inc. Dev Team <team@websemantics.ca>
+ *  @author    Adnan M.Sagar, PhD. <adnan@websemantics.ca>
  *
- * @param {Object} l, the document current location
- * @param {Boolean} root, true if this project works without a repositoy name (custom domain, organization repository)
+ *  @param {Object} l, the document current location
+ *  @param {Boolean} projectPages, true by default, https://help.github.com/articles/user-organization-and-project-pages
+ *
  */
 
-;(function(l, root) {
+;(function(l, projectPages) {
 
-  /* repository name if not working on root domain */
-  var repo = root ? '' : '/' + l.pathname.split('/')[1]
+  var repo = projectPages ? '/' + l.pathname.split('/')[1] : ''
 
    /* redirect all 404 trafic to index.html */
    function redirect() {
@@ -50,4 +50,4 @@
   /* if current document is 404 page page, redirect to index.html otherwise resolve */
   document.title === '404' ? redirect() : resolve()
 
-}(window.location, window.rootDomain || false))
+}(window.location, window.projectPages || true ))

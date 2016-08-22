@@ -17,7 +17,6 @@
   "ignore": [
     "**/.*",
     "node_modules",
-    "lib",
     "test",
     "tests"
   ],
