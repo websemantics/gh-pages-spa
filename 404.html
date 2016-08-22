@@ -6,12 +6,12 @@
     <meta http-equiv="refresh" content="0;URL='/gh-pages-spa'"></meta>
     <title>404 SPA for Github Pages - Web Semantics, Inc.</title>
     <script type="text/javascript">
-        var l = window.location;
+        var l = window.location
         l.replace(
             l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + '/?' +
             (l.pathname ? 'p=' + l.pathname.replace(/&/g, '~and~') : '') +
-            (l.search ? '&q=' + l.search.slice(2).replace(/&/g, '~and~') : '') +
-            l.hash);
+            (l.search ? '&q=' + l.search.slice(0).replace(/&/g, '~and~') : '') +
+            l.hash)
     </script>
 </head>
 
