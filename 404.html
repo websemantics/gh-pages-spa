@@ -18,7 +18,7 @@
         console.log(l.search.slice(1).replace(/&/g, '~and~'))
         console.log(
             l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + url + '/?' +
-            (l.pathname ? 'p=' + l.pathname.replace(/&/g, '~and~') : '') +
+            (l.pathname ? 'p=' + l.pathname.replace(/&/g, '~and~').replace(url, '') : '') +
             (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
             l.hash)
         // l.replace(
