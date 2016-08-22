@@ -63,4 +63,4 @@
    /* redirect all trafic to index.html if 404 page */
    document.title === '404' ? redirect() : resolve()
 
- }(window.location, rootDomain))
+ }(window.location, rootDomain || false))
