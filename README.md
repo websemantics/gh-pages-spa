@@ -1,12 +1,12 @@
 ![SPA](https://websemantics.github.io/gh-pages-spa/img/screenshot.png)
-> The Single-Page App Hack For [GitHub Pages](https://pages.github.com/)
+> Enables SPA for [GitHub Pages](https://pages.github.com/)
 
 ### [Live demo](http://websemantics.github.io/gh-pages-spa/)
 
 
 ## Credits
 
-This project was built with these resources,
+This project was inspired and built with these resources,
 
 [SPA Github Pages](https://github.com/rafrex/spa-github-pages), host single page apps with github pages.
 
