@@ -17,7 +17,7 @@
   var root = false
 
   /* @param {String} repo, repository name if not working on root domain */
-  var repo = root ? '' : window.location.pathname.split('/')[1]
+  var repo = root ? '' : '/' + window.location.pathname.split('/')[1]
 
   /**
   * redirect() redirect all 404 trafic to index.html
