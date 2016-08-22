@@ -5,11 +5,11 @@
     <meta charset="utf-8" />
     <title>404 SPA for Github Pages - Web Semantics, Inc.</title>
     <script type="text/javascript">
-        var url = '/gh-pages-spa'
+        var repo = ''
         var l = window.location
         l.replace(
-            l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + url + '/?' +
-            (l.pathname ? 'p=' + l.pathname.replace(/&/g, '~and~').replace(url, '') : '') +
+            l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + repo + '/?' +
+            (l.pathname ? 'p=' + l.pathname.replace(/&/g, '~and~').replace(repo, '') : '') +
             (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
             l.hash)
     </script>
