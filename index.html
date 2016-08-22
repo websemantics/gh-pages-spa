@@ -13,6 +13,7 @@
 
     <script>
     (function(l) {
+      console.log(l)
         if (l.search) {
           var q = {};
           l.search.slice(1).split('&').forEach(function(v) {
@@ -28,7 +29,7 @@
           }
         }
       }(window.location))
-      
+
     //
     // $(function() {
     //       var redirect = sessionStorage.redirect;
