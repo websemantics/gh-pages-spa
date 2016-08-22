@@ -89,7 +89,7 @@
 
 
        /* @param {String} repo, repository name if not working on root domain */
-       var defaults.rootDomain = root ? '' : '/' + l.pathname.split('/')[1]
+       var repo = defaults.rootDomain ? '' : '/' + l.pathname.split('/')[1]
 
       /**
        * redirect() redirect all 404 trafic to index.html
