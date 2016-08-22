@@ -1,5 +1,5 @@
 ![SPA](https://websemantics.github.io/gh-pages-spa/img/screenshot.png)
-> Enables SPA for [GitHub Pages](https://pages.github.com/)
+> Single Page Applications for [GitHub Pages](https://pages.github.com/)
 
 ### [Live demo](http://websemantics.github.io/gh-pages-spa/)
 
