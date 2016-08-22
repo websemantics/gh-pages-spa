@@ -8,10 +8,9 @@
     <script type="text/javascript">
         var l = window.location;
         l.replace(
-            l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') +
-            '/?' +
+            l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + '/?' +
             (l.pathname ? 'p=' + l.pathname.replace(/&/g, '~and~') : '') +
-            (l.search ? '&q=' + l.search.slice(1).replace(/&/g, '~and~') : '') +
+            (l.search ? '&q=' + l.search.slice(2).replace(/&/g, '~and~') : '') +
             l.hash);
     </script>
 </head>
