@@ -1,16 +1,17 @@
-![SPA](https://websemantics.github.io/gh-pages-spa/img/screenshot.png)
-> Single Page Applications for [GitHub Pages](https://pages.github.com/)
+![SPA](https://websemantics.github.io/gh-pages-spa/assets/img/screenshot.png)
+> This is a tiny package to enable building Single Page Applications for [GitHub Pages](https://pages.github.com/).
+
 
 ### [Live demo](http://websemantics.github.io/gh-pages-spa/)
 
 
 ## Getting Started
 
-Use the template provided in `example` folder or, follow the steps below,
+Use the template provided in the `example` folder or, follow the easy steps below,
 
 1- Create a new project with two pages `index.html` and `404.html`.
 
-2- Install this package with [Bower](https://bower.io/) or [NPM](https://www.npmjs.com/),
+2- Install this package with either [Bower](https://bower.io/) or [NPM](https://www.npmjs.com/),
 
 ```bash
 npm install ghspa
@@ -28,7 +29,7 @@ npm install ghspa
 <title>404</title>
 ```
 
-5- This package supports the [two types of GitHub Pages](https://help.github.com/articles/user-organization-and-project-pages/), **User/Organization** and **Project** Pages. The global parameter `projectPages` is set to `true` by default for **Project** Pages. To enable **User/Organization** Pages or [Custom Domain](https://help.github.com/articles/using-a-custom-domain-with-github-pages/) set it to `false` as follows,
+5- This package supports the [two types](https://help.github.com/articles/user-organization-and-project-pages/) of GitHub Pages, **User/Organization** and **Project** Pages. The global parameter `projectPages` is set to `true` by default for **Project** Pages. To enable **User/Organization** Pages or [Custom Domains](https://help.github.com/articles/using-a-custom-domain-with-github-pages/) set it to `false` before including the script as follows,
 
 ```html
 <script type="text/javascript">var projectPages = false</script>
