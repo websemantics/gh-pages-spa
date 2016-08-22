@@ -39,11 +39,13 @@ npm install ghspa
 
 ## Credits
 
-This project was heavily inspired and built with these resources,
+This project was built with these resources,
 
 [SPA Github Pages](https://github.com/rafrex/spa-github-pages), host single page apps with github pages.
 
 [Pokemon Go](http://www.flaticon.com/packs/pokemon-go), a free SVG icon set.
+
+[Semantic-UI](http://semantic-ui.com/), a development framework that helps create beautiful, responsive layouts using human-friendly HTML.
 
 
 ## License
