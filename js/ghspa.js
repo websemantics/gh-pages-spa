@@ -13,19 +13,23 @@
  * @author    Adnan M.Sagar, PhD. <adnan@websemantics.ca>
  */
 
- ;(function(l) {
+ /* Github Pagaes SPS package
+  *
+  * @param {Object} l, the document current location
+  * @param {Boolean} root, true if this project works without a repositoy name (custom domain, orginization repository)
+  */
 
-   /* @param {Boolean} root, does this project work on the root domain */
-   var root = false
+ ;(function(l, root) {
 
    /* @param {String} repo, repository name if not working on root domain */
    var repo = root ? '' : '/' + l.pathname.split('/')[1]
 
-   /**
+  /**
    * redirect() redirect all 404 trafic to index.html
    *
    * @return {Void}
    */
+
    function redirect() {
      l.replace(l.protocol + '//' + l.hostname + (l.port ? ':' + l.port : '') + repo + '/?' +
               (l.pathname ? 'p=' + l.pathname.replace(/&/g, '~and~').replace(repo, '') : '') +
@@ -33,11 +37,12 @@
               (l.hash))
    }
 
-   /**
+  /**
    * resolve() resolve 404 redirects into internal routes
    *
    * @return {Void}
    */
+
    function resolve() {
      if (l.search) {
        var q = {}
@@ -58,4 +63,4 @@
    /* redirect all trafic to index.html if 404 page */
    document.title === '404' ? redirect() : resolve()
 
- }(window.location))
+ }(window.location, rootDomain))
