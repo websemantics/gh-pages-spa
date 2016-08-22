@@ -1,0 +1,240 @@
+/* document styles */
+body, h1, h2, h3, h4, h5, div, p, span, code {
+  font-family: 'Roboto', sans-serif;
+}
+
+label, body,
+.ui.divider
+.ui.form input,
+.ui.selection.dropdown
+.ui.input input:focus::-webkit-input-placeholder,
+.ui.input.focus input::-webkit-input-placeholder {
+  color:#756c74!important;
+  font-weight:300;
+}
+
+body {
+  background: #b1d4e8;
+  font-size: 1.3rem;
+}
+
+.hidden {
+  display: none!important;
+}
+
+.pusher {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+  background: #c2e3f5;
+}
+
+.hero {
+  overflow: hidden;
+  padding-bottom: 4rem;
+  padding-top: 2rem;
+  margin-bottom: 2rem;
+}
+
+img.logo {
+  width:100%;
+  float:left;
+}
+
+table.center {
+  margin-left:auto;
+  margin-right:auto;
+}
+
+table.center td {
+  text-align: center;
+}
+
+.container {
+  max-width: 64em;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.ui.segment.content {
+  border:none;
+  position: relative;
+  top: -5rem;
+  padding:2rem 2rem 2rem 2rem;
+}
+
+.ui.container .buttons {
+  padding-bottom: 20px;
+}
+
+/* generator / code generate */
+.generator > .html.segment {
+    padding: 2.5em 1em 1em;
+}
+
+.generator > .html {
+    padding: 0em;
+    transition: box-shadow 0.2s ease, padding 0.2s ease;
+    box-shadow: 0px 0px 0px 0px rgba(0, 0, 0, 0);
+}
+
+.generator > .html.segment > .attached.label {
+    display: block;
+}
+
+.generator > .html > .top.attached.label,
+.generator .ui.multiple.dropdown>.label {
+      -moz-user-select: none;
+    -webkit-user-select: none;
+    user-select: none;
+    background-color: #F8F8F8;
+    box-shadow: 0px 0px 0px 1px #DDDDDD;
+}
+
+.generator .ui.label {
+  font-weight:normal;
+}
+
+.generator .ui.labeled.input .ui.label {
+  border: 1px solid rgba(34,36,38,.15);
+  background:#F8F8F8
+}
+
+.generator .ui.labeled.input  .ui.label.middle {
+  border-left-color: transparent;
+  border-right-color: transparent;
+}
+
+.generator .ui.form .wide.field .ui.input input.join.right,
+.generator .ui.label.middle {
+  border-top-right-radius: 0;
+  border-bottom-right-radius: 0;
+}
+
+.generator .ui.form .wide.field .ui.input input.join.left,
+.generator .ui.label.middle {
+  border-top-left-radius: 0;
+  border-bottom-left-radius: 0;
+}
+
+.generator p:not(:first-child) {
+  margin: 18px 0px;
+}
+
+.generator .ui.checkbox label {
+  font-weight: normal;
+  font-size: .85714286rem;
+}
+
+.generator .ui.checkbox {
+  padding-left: 8px;
+}
+
+.generator .ui.form .inline.fields {
+  margin:0px;
+  margin-bottom: -5px;
+}
+
+.generator #display a.ui.button {
+  margin: 0rem 1rem 1rem 0rem;
+}
+
+.generator #code {
+  padding-top:1rem;
+}
+
+.generator #code.ui.segment,
+  .generator #display.ui.segment {
+  box-shadow : none;
+}
+
+.generator #code code {
+  margin: 1rem!important;
+}
+
+/* code snippets styles */
+code {
+  color: #ed6c63;
+  font-weight:300;
+  padding: 0px;
+  margin: 0px;
+  display: block;
+}
+
+code, code .CodeMirror, code .CodeMirror.cm-s-mdn-like, code .CodeMirror-scroll {
+  background-image: none;
+  background: transparent;
+}
+
+code .CodeMirror {
+  height:100%;
+  font-weight:300;
+}
+
+code.custom, code.xml, code.htmlmixed, code.javascript, code.shell{
+  display: flex;
+  border: none;
+  margin:2rem 0 2rem 0;
+}
+
+code.custom {
+  color: #777;
+  white-space: pre ;
+  display: block;
+}
+
+/* content styles */
+.title-l{
+  font-size:4rem;
+}
+
+.title-m {
+  font-size:2rem;
+}
+
+.text-m {
+  font-size: 1.5rem;
+}
+
+.text-l {
+  font-size: 1.7rem;
+}
+
+/* text selection */
+::selection {
+  background-color: #e8e8e8 !important;
+}
+
+::-moz-selection {
+  background-color: #e8e8e8 !important;
+}
+
+.CodeMirror-selected, .styled-background,
+.cm-s-mdn-like .CodeMirror-line::selection,
+.cm-s-mdn-like .CodeMirror-line > span::selection,
+.cm-s-mdn-like .CodeMirror-line > span > span::selection {
+  background-color: #e8e8e8 !important;
+}
+
+/* footer styles */
+.ui.footer {
+  padding-bottom: 2rem;
+  background-color: #c2e3f5;
+}
+
+.footer img {
+  vertical-align: middle;
+}
+
+.footer h4 a {
+  font-size: 1.3rem;
+  color:#756c74;
+}
+
+.footer h4 a:hover {
+  color:#5C4E47;
+}
+
+.footer .tentacle {
+  vertical-align: baseline;
+}

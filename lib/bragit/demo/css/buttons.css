@@ -1,0 +1,27 @@
+
+/* styles for github action buttons */
+.ui.brand.button, .ui.brand.buttons .button {
+    background-color: #756c74;
+    color: #fff!important;
+}
+
+.ui.brand.label {
+    color: #756c74!important;
+    border-color: #756c74!important;
+    background-color: #ffffff;
+}
+
+.ui.brand.button:focus, .ui.brand.buttons .button:focus,
+  .ui.brand.button:hover, .ui.brand.buttons .button:hover {
+    background-color: #9d959c;
+}
+
+.ui.brand.labels .label:focus, .ui.brand.label:focus,
+  .ui.brand.labels .label:hover, .ui.brand.label:hover {
+    color: #9d959c!important;
+    border-color: #9d959c!important;
+}
+
+.ui.brand.labeled .ui.button .star.icon {
+  color: #F5CC7A!important;
+}

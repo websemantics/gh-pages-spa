@@ -1,0 +1,35 @@
+{
+  "name": "gitters",
+  "version": "1.0.5",
+  "description": "Straightforward Github reader with cache.",
+  "main": "gitters.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/websemantics/gitters.git"
+  },
+  "keywords": [
+    "github",
+    "reader",
+    "cache",
+    "larder",
+    "api",
+    "in-browser"
+  ],
+  "author": {
+    "name": "Adnan M.Sagar, PhD.",
+    "email": "adnan@websemantics.ca"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/websemantics/gitters/issues"
+  },
+  "dependencies": {
+    "jquery": "^1.11.3",
+    "larder": "*",
+    "base-64": "*"
+  },
+  "homepage": "https://github.com/websemantics/gitters#readme"
+}

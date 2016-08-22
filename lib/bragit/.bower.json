@@ -1,0 +1,45 @@
+{
+  "name": "bragit",
+  "main": "bragit.js",
+  "version": "0.1.6",
+  "homepage": "https://github.com/websemantics/bragit",
+  "authors": [
+    "Adnan <adnan@websemantics.ca>"
+  ],
+  "description": "Show off your Github repository buttons with elegance.",
+  "keywords": [
+    "semantic-ui",
+    "github",
+    "buttons",
+    "jquery"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "demo/lib",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "semantic-ui": "*",
+    "codemirror": "*",
+    "tinyColorPicker": "*",
+    "handlebars": "*",
+    "tinycolor": "*",
+    "js-beautify": "*",
+    "gitters": "*"
+  },
+  "dependencies": {
+    "gitters": "*"
+  },
+  "_release": "0.1.6",
+  "_resolution": {
+    "type": "version",
+    "tag": "0.1.6",
+    "commit": "bd8640fd298ca98d0d2049ab4b21f7df47bcb5fb"
+  },
+  "_source": "https://github.com/websemantics/bragit.git",
+  "_target": "*",
+  "_originalSource": "bragit"
+}

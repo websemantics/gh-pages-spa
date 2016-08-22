@@ -1,0 +1,39 @@
+{
+  "name": "gitters",
+  "main": "gitters.js",
+  "version": "1.0.5",
+  "homepage": "https://github.com/websemantics/gitters",
+  "authors": [
+    "Adnan <adnan@websemantics.ca>"
+  ],
+  "description": "Straightforward Github reader with cache.",
+  "keywords": [
+    "github",
+    "reader",
+    "cache",
+    "larder",
+    "api",
+    "in-browser"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "*",
+    "larder": "*",
+    "base-64": "*"
+  },
+  "_release": "1.0.5",
+  "_resolution": {
+    "type": "version",
+    "tag": "1.0.5",
+    "commit": "b25ab382d6268e50c4dce63e1af82c9baec56875"
+  },
+  "_source": "https://github.com/websemantics/gitters.git",
+  "_target": "*",
+  "_originalSource": "gitters"
+}

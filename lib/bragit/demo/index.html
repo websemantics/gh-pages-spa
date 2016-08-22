@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0">
+<title>Bragit: Show off your Github repository buttons with elegance</title>
+<link rel="apple-touch-icon" sizes="57x57" href="icon/apple-icon-57x57.png">
+<link rel="apple-touch-icon" sizes="60x60" href="icon/apple-icon-60x60.png">
+<link rel="apple-touch-icon" sizes="72x72" href="icon/apple-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="76x76" href="icon/apple-icon-76x76.png">
+<link rel="apple-touch-icon" sizes="114x114" href="icon/apple-icon-114x114.png">
+<link rel="apple-touch-icon" sizes="120x120" href="icon/apple-icon-120x120.png">
+<link rel="apple-touch-icon" sizes="144x144" href="icon/apple-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="152x152" href="icon/apple-icon-152x152.png">
+<link rel="apple-touch-icon" sizes="180x180" href="icon/apple-icon-180x180.png">
+<link rel="icon" type="image/png" sizes="192x192"  href="icon/android-icon-192x192.png">
+<link rel="icon" type="image/png" sizes="32x32" href="icon/favicon-32x32.png">
+<link rel="icon" type="image/png" sizes="96x96" href="icon/favicon-96x96.png">
+<link rel="icon" type="image/png" sizes="16x16" href="icon/favicon-16x16.png">
+<link rel="manifest" href="icon/manifest.json">
+<meta name="msapplication-TileColor" content="#ffffff">
+<meta name="msapplication-TileImage" content="/ms-icon-144x144.png">
+<meta name="theme-color" content="#ffffff">
+<link href='http://fonts.googleapis.com/css?family=Roboto:700,400,300' rel='stylesheet' type='text/css'>
+<link rel="stylesheet" type="text/css" href="lib/semantic-ui/dist/semantic.min.css">
+<link rel="stylesheet" type="text/css" href="lib/codemirror/lib/codemirror.css">
+<link rel="stylesheet" type="text/css" href="lib/codemirror/theme/mdn-like.css">
+<link rel="stylesheet" type="text/css" href="css/index.css">
+<link rel="stylesheet" type="text/css" href="css/buttons.css">
+</head>
+<body class="stretched">
+   <section class="hero">
+    <div class="ui container">
+      <div class="ui grid">
+        <div class="ten wide column">
+          <h1 class="title-l">Bra<span style="color:#9d959c">git</span></h1>
+            <div class="buttons">
+              <a class="ui labeled tiny button github-websemantics-bragit-stars">
+                <div class="ui brand tiny button">
+                  <i class="star icon"></i> Stars
+                </div>
+                <div class="ui basic brand left pointing label">
+                  <i class="spinner loading icon"></i>
+                </div>
+              </a>
+              <a class="ui left labeled tiny button github-websemantics-bragit-forks">
+                <div class="ui basic brand right pointing label">
+                  <i class="spinner loading icon"></i>
+                </div>
+                <div class="ui brand tiny button">
+                  <i class="fork icon"></i> Forks
+                </div>
+              </a>
+              <a class="ui labeled tiny button github-websemantics-bragit-watchers">
+                <div class="ui brand tiny button">
+                  <i class="eye icon"></i> Watchers
+                </div>
+                <div class="ui basic brand left pointing label">
+                  <i class="spinner loading icon"></i>
+                </div>
+              </a>
+              <a class="ui left labeled tiny button github-websemantics-bragit-issues">
+                <div class="ui basic brand right pointing label">
+                  <i class="spinner loading icon"></i>
+                </div>
+                <div class="ui brand tiny button">
+                  <i class="info circle icon"></i> Issues
+                </div>
+              </a>
+              <a class="ui brand tiny button github-websemantics-bragit-github">
+                  <i class="github icon"></i> Github
+              </a>
+            </div>
+          <p class="text-l">Show off your Github repository buttons with elegance.</p>
+        </div>
+        <div class="six wide column">
+          <img class="logo" src="img/logo.svg"/>
+        </div>
+      </div>
+    </div>
+  </section>
+  <div class="pusher">
+    <div class="ui container">
+      <div class="ui segment content generator">
+        <div class="ui form">
+          <div class="fields">
+            <div id="github-input" class="ten wide uri field">
+              <div class="ui labeled input">
+                <div class="ui label">
+                  http://github.com/
+                </div>
+                <input id="username" type="text" autocomplete="off" placeholder="Username" value="" class="join right popup" data-content="Enter your Github username" data-variation="inverted">
+                <div class="ui label middle">/</div>
+                <input id="repository" type="text" placeholder="Repository" value="" class="join left popup" data-content="Enter your Github repository name" data-variation="inverted">
+              </div>
+            </div>
+            <div class="two wide field popup" data-content="Select button size" data-variation="inverted">
+              <select id="size" class="ui compact dropdown">
+                <option value="mini">Mini</option>
+                <option value="tiny" selected="selected">Tiny</option>
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+                <option value="big">Big</option>
+                <option value="huge">Huge</option>
+                <option value="massive">Massive</option>
+              </select>
+            </div>
+            <div class="four wide field popup" data-content="Select a color class or set your custom color" data-variation="inverted">
+              <div class="ui action input">
+                <input id="color" type="text" placeholder="Color" value="#FFFFFF">
+                <select id="color-select" class="ui compact selection dropdown">
+                  <option value="default">Default</option>
+                  <option value="custom">Custom</option>
+                  <option value="red">Red</option>
+                  <option value="orange">Orange</option>
+                  <option value="yellow">Yellow</option>
+                  <option value="olive">Olive</option>
+                  <option value="green">Green</option>
+                  <option value="teal">Teal</option>
+                  <option value="blue">Blue</option>
+                  <option value="violet">Violet</option>
+                  <option value="purple">Purple</option>
+                  <option value="pink">Pink</option>
+                  <option value="brown">Brown</option>
+                  <option value="grey">Grey</option>
+                  <option value="black">Black</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class="fields">
+            <div class="twelve wide uri field popup" data-content="Select Bragit button types" data-variation="inverted">
+              <select id="actions-select" multiple="" class="ui dropdown">
+                <option value="stars">Stars</option>
+                <option value="forks">Forks</option>
+                <option value="watchers">Watchers</option>
+                <option value="issues">Issues</option>
+                <option value="download">Download</option>
+                <option value="contributors">Contributors</option>
+                <option value="github">Github</option>
+              </select>
+            </div>
+            <div class="two wide field popup" data-content="Clear the form and start all over" data-variation="inverted">
+              <button id="clear" class="fluid ui basic button"><i class="icon trash"></i> Clear</button>
+            </div>
+            <div class="two wide field popup" data-content="Refresh the generated code" data-variation="inverted">
+              <button id="refresh" class="fluid ui basic flex button"><i class="icon refresh"></i> Refresh</button>
+            </div>
+          </div>
+        </div>
+        <div id="display" class="hidden ui segment">
+          <div class="ui top right attached label">Preview</div>
+          <div id="display-content"></div>
+        </div>
+
+        <div id="code" class="hidden ui segment">
+          <div class="ui top right attached label">Code</div>
+          <code id="code-content" class="mixedMode">
+          </code>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="ui footer">
+    <div class="ui container">
+      <table class="center">
+        <tr>
+          <td>
+            Built with <img data-preserve-html-node="true" src="img/heart.svg" alt="love" style="width:22px;height:22px;"> by &nbsp;<br/>
+            <h4><a href="http://websemantics.ca">Web Semantics, Inc.</a></h4>
+          </td>
+          <td>
+            <img class="tentacle" src="img/tentacle.svg"/>
+          </td>
+        </tr>
+      </table>
+    </div>
+	</div>
+  <script type="text/javascript" src="lib/jquery/dist/jquery.min.js"></script>
+  <script type="text/javascript" src="lib/semantic-ui/dist/semantic.min.js"></script>
+  <script type="text/javascript" src="lib/tinyColorPicker/jqColorPicker.min.js"></script>
+  <script type="text/javascript" src="lib/tinycolor/dist/tinycolor-min.js"></script>
+  <script type="text/javascript" src="lib/handlebars/handlebars.min.js"></script>
+  <script src="lib/codemirror/lib/codemirror.js" type="text/javascript"></script>
+  <script src="lib/codemirror/mode/xml/xml.js" type="text/javascript"></script>
+  <script src="lib/codemirror/mode/javascript/javascript.js" type="text/javascript"></script>
+  <script src="lib/codemirror/mode/shell/shell.js" type="text/javascript"></script>
+  <script src="lib/codemirror/mode/htmlmixed/htmlmixed.js" type="text/javascript"></script>
+  <script src="lib/codemirror/mode/vbscript/vbscript.js" type="text/javascript"></script>
+  <script src="lib/codemirror/mode/css/css.js" type="text/javascript"></script>
+  <script src="lib/js-beautify/js/lib/beautify.js" type="text/javascript"></script>
+  <script src="lib/js-beautify/js/lib/beautify-html.js" type="text/javascript"></script>
+  <script src="lib/js-beautify/js/lib/beautify-css.js" type="text/javascript"></script>
+  <script type="text/javascript" src="lib/base-64/base64.js"></script>
+  <script type="text/javascript" src="lib/larder/larder.js"></script>
+  <script type="text/javascript" src="lib/gitters/gitters.js"></script>
+  <script type="text/javascript" src="https://cdn.rawgit.com/websemantics/bragit/0.1.5/bragit.js"></script>
+  <script src="js/index.js" type="text/javascript"></script>
+</body>
+</html>

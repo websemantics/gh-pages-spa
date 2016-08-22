@@ -1,0 +1,24 @@
+1.0.5
+    date: 2016-08-22
+    changes:
+    - Set Larder default
+    - Allow error events to bubble
+
+1.0.3
+    date: 2016-08-05
+    changes:
+    - Decode Base64 content
+    - Better cache support
+    - Allow requests for multiple resources
+    - Disable debug mode by default
+
+1.0.2
+    date: 2016-08-05
+    changes:
+    - Add documentation
+    - Rename of class methods
+
+1.0.1
+    date: 2016-08-05
+    changes:
+    - Working code

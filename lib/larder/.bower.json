@@ -1,0 +1,31 @@
+{
+  "name": "larder",
+  "main": "larder.js",
+  "homepage": "https://github.com/websemantics/larder",
+  "authors": [
+    "Adnan <adnan@websemantics.ca>"
+  ],
+  "description": "Straightforward, in browser cache using local storage.",
+  "keywords": [
+    "cache",
+    "storage",
+    "in-browser"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "test",
+    "tests"
+  ],
+  "dependencies": {},
+  "_release": "2e5bd63183",
+  "_resolution": {
+    "type": "branch",
+    "branch": "master",
+    "commit": "2e5bd63183ecc793b4638f52b27b0724b579eddd"
+  },
+  "_source": "https://github.com/websemantics/larder.git",
+  "_target": "*",
+  "_originalSource": "larder"
+}

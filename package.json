@@ -1,0 +1,33 @@
+{
+  "name": "ghspa",
+  "version": "1.0.0",
+  "description": "Easy way to enable Single Page Applications for GitHub Pages.",
+  "main": "ghspa.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/websemantics/gh-pages-spa.git"
+  },
+  "keywords": [
+    "github",
+    "spa",
+    "github-pages",
+    "gh-pages"
+  ],
+  "author": {
+    "name": "Adnan M.Sagar, PhD.",
+    "email": "adnan@websemantics.ca"
+  },
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/websemantics/gh-pages-spa/issues"
+  },
+  "dependencies": {
+  },
+  "devDependencies": {
+    "bragit": "*"
+  },
+  "homepage": "https://github.com/websemantics/gh-pages-spa#readme"
+}

@@ -1,0 +1,29 @@
+{
+  "name": "ghspa",
+  "main": "ghspa.js",
+  "version": "1.0.0",
+  "homepage": "https://github.com/websemantics/gh-pages-spa",
+  "authors": [
+    "Adnan <adnan@websemantics.ca>"
+  ],
+  "description": "Easy way to enable Single Page Applications for GitHub Pages.",
+  "keywords": [
+    "github",
+    "spa",
+    "github-pages",
+    "gh-pages"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "lib",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+  },
+  "devDependencies": {
+    "bragit": "*"
+  }
+}

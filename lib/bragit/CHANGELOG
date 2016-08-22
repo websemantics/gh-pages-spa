@@ -1,0 +1,46 @@
+0.1.6
+    date: 2016-08-21
+    changes:
+    - Add Bower dependencies
+
+0.1.5
+    date: 2016-08-21
+    changes:
+    - Cache Github API calls with Gitters
+    - Deploy using an NPM script
+    - Add `clearOnStart` default settings to clear cache
+    - Add `expires` default settings for cached requests (1 hour by default)
+
+0.1.4
+    date: 2016-05-26
+    changes:
+    - Allow a default flag to ignore injecting of css
+
+0.1.3
+  date: 2016-05-21
+  changes:
+  - Fix an issue when running as Node.js and require 'jquery'
+
+0.1.2
+  date: 2016-05-06
+  changes:
+  - Allow for repo names that contains the default hyphen delimiter `-` for example
+    `websemantics/the-ten-commandments-for-exceptional-developers`
+
+0.1.1
+  date: 2016-05-04
+  changes:
+  - Add new action, Github
+
+0.1.0
+  date: 2016-05-04
+  changes:
+  - Supports for Stars, Forks, Watchers, Issues, Download and Contributors buttons
+  - Use css class conventions to pull Github repo data
+
+0.0.0
+  date: 0000-00-00
+  changes:
+  - Use public CDN for javascript, https://rawgit.com
+  - Submit the library url, https://github.com/websemantics/bragit/blob/0.1.2/bragit.js
+  - Notice the release number, this must be done for all new releases
