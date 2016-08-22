@@ -13,32 +13,21 @@
     <script type="text/javascript" src="lib/larder/larder.js"></script>
     <script type="text/javascript" src="lib/gitters/gitters.js"></script>
     <script type="text/javascript" src="lib/bragit/bragit.js"></script>
-    <script>
-      console.log(location.href)
-    </script>
+    <script>var redirect = location.href</script>
     <script type="text/javascript" src="ghspa.js"></script>
     <script>
-      console.log(location.href)
-    </script>
-    <script>
-
-
-    //
-    // $(function() {
-    //       var redirect = sessionStorage.redirect
-    //       delete sessionStorage.redirect
-    //       if (redirect && redirect != location.href) {
-    //           history.replaceState(null, null, redirect)
-    //           $('#message').html('Coming at you from')
-    //           $('#message-detail').html(redirect)
-    //       } else {
-    //         $('#message').html('')
-    //         $('#message-detail').html('Still here at the index.html file')
-    //       }
-    //   })
+      $(function() {
+          if (redirect != location.href) {
+              history.replaceState(null, null, redirect)
+              $('#message').html('Coming at you from')
+              $('#message-detail').html(redirect)
+          } else {
+            $('#message').html('')
+            $('#message-detail').html('Still here at the index.html file')
+          }
+      })
     </script>
 </head>
-
 <body>
     <div class="pusher">
         <div class="ui vertical masthead center aligned segment">
