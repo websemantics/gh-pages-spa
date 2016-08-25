@@ -8,8 +8,9 @@
  *
  *  This project was released under MIT license.
  *
+ *  @link      https://github.com/rafrex/spa-github-pages
+ *  @author    Rafael Pedicini <code@rafrex.com>
  *  @link      http://websemantics.ca
- *  @author    Web Semantics, Inc. Dev Team <team@websemantics.ca>
  *  @author    Adnan M.Sagar, PhD. <adnan@websemantics.ca>
  *
  *  @param {Object} l, the document current location
