@@ -29,12 +29,7 @@ npm install ghspa
 <title>404</title>
 ```
 
-5- This package supports the [two types](https://help.github.com/articles/user-organization-and-project-pages/) of GitHub Pages, **User/Organization** and **Project** Pages. The global parameter `projectPages` is set to `true` by default for **Project** Pages. To enable **User/Organization** Pages or [Custom Domains](https://help.github.com/articles/using-a-custom-domain-with-github-pages/) set it to `false` before including the script as follows,
-
-```html
-<script type="text/javascript">var projectPages = false</script>
-<script type="text/javascript" src="path-to/ghspa.js"></script>
-```
+5- This package supports the [two types](https://help.github.com/articles/user-organization-and-project-pages/) of GitHub Pages, **User/Organization** and **Project** Pages. The global parameter `projectPages` is set to [`window.projectPages || true`](ghspa.js#L54) which will be always `true` by default for **Project** Pages. To enable **User/Organization** Pages or [Custom Domains](https://help.github.com/articles/using-a-custom-domain-with-github-pages/) change the parameters in ghspa.js from `window.projectPages || true` to `false`,
 
 
 ## Credits
